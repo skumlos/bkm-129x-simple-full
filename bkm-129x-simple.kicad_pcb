@@ -5,7 +5,7 @@
     (no_connects 0)
     (area 73.555999 43.324999 201.918 203.475001)
     (thickness 1.6)
-    (drawings 25)
+    (drawings 26)
     (tracks 432)
     (zones 0)
     (modules 55)
@@ -2434,6 +2434,9 @@
     (pad 4 smd rect (at -2.5 -2.75 270) (size 1.2 2.5) (layers F.Cu F.Paste F.Mask))
   )
 
+  (gr_text "75 Ohm Sync\nMax. 1.0Vpp" (at 117.35 168.09 90) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+  )
   (gr_text "ON (75R TERM)\n\nOFF (PASSTHROUGH)" (at 126.2 78.4) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
   )
