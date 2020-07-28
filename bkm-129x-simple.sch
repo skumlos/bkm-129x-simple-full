@@ -42,10 +42,10 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Sheet 1 2
+Title "BKM-129X Compatible full size"
+Date "2020-07-27"
+Rev "B"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -945,8 +945,6 @@ F 3 "" H 10550 4500 50  0001 C CNN
 	1    10550 4500
 	0    -1   -1   0   
 $EndComp
-Text Label 6500 5050 0    60   ~ 0
-~MCU_RESET
 NoConn ~ 6500 4750
 NoConn ~ 6500 5350
 NoConn ~ 6500 5500
@@ -959,8 +957,6 @@ NoConn ~ 6500 6400
 NoConn ~ 6500 6550
 NoConn ~ 6500 6700
 NoConn ~ 3700 5050
-Text Label 3700 5350 2    60   ~ 0
-MCU_SLOT_ID
 $Comp
 L DTC144EKA Q1
 U 1 1 5E36092F
@@ -1011,10 +1007,6 @@ F 3 "" H 8500 5600 50  0001 C CNN
 	1    8500 5600
 	1    0    0    -1  
 $EndComp
-Text Label 8350 5150 2    60   ~ 0
-~MCU_RESET
-Wire Wire Line
-	8350 5150 8500 5150
 Connection ~ 8500 5150
 $Comp
 L 74LVC125 U4
@@ -1089,8 +1081,6 @@ Wire Wire Line
 Wire Wire Line
 	750  6900 800  6900
 Connection ~ 750  6900
-Wire Wire Line
-	1150 6900 1150 6800
 Connection ~ 1150 6900
 $Comp
 L GNDD #PWR041
@@ -1188,8 +1178,6 @@ Wire Wire Line
 	850  6100 1000 6100
 Wire Wire Line
 	1300 6100 1400 6100
-Text Label 1150 6800 1    60   ~ 0
-MCU_SLOT_ID
 Text Label 750  7100 3    60   ~ 0
 SLOT_ID
 Connection ~ 950  6100
@@ -1280,10 +1268,6 @@ Wire Wire Line
 Connection ~ 950  4600
 Wire Wire Line
 	1300 4600 1400 4600
-Text Label 2300 4600 0    60   ~ 0
-MCU_SCK
-Text Label 6500 6850 0    60   ~ 0
-MCU_SCK
 $Comp
 L CP C8
 U 1 1 5E367570
@@ -1608,27 +1592,25 @@ $EndComp
 $Comp
 L R R19
 U 1 1 5E4AFA4C
-P 3050 4750
-F 0 "R19" V 3130 4750 50  0000 C CNN
-F 1 "4K7" V 3050 4750 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 2980 4750 50  0001 C CNN
-F 3 "" H 3050 4750 50  0001 C CNN
-	1    3050 4750
+P 3050 4550
+F 0 "R19" V 3130 4550 50  0000 C CNN
+F 1 "4K7" V 3050 4550 50  0000 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 2980 4550 50  0001 C CNN
+F 3 "" H 3050 4550 50  0001 C CNN
+	1    3050 4550
 	-1   0    0    1   
 $EndComp
 $Comp
 L +5VD #PWR060
 U 1 1 5E4AFB1C
-P 3050 4600
-F 0 "#PWR060" H 3050 4450 50  0001 C CNN
-F 1 "+5VD" H 3050 4750 50  0000 C CNN
-F 2 "" H 3050 4600 50  0001 C CNN
-F 3 "" H 3050 4600 50  0001 C CNN
-	1    3050 4600
+P 3050 4400
+F 0 "#PWR060" H 3050 4250 50  0001 C CNN
+F 1 "+5VD" H 3050 4550 50  0000 C CNN
+F 2 "" H 3050 4400 50  0001 C CNN
+F 3 "" H 3050 4400 50  0001 C CNN
+	1    3050 4400
 	1    0    0    -1  
 $EndComp
-Text Label 3050 4900 3    60   ~ 0
-MCU_SCK
 $Comp
 L MIC3490 U5
 U 1 1 5E4D822E
@@ -1910,4 +1892,47 @@ F 3 "" H 1850 3300 50  0001 C CNN
 	1    1850 3300
 	0    1    1    0   
 $EndComp
+$Sheet
+S 3450 3700 1100 650 
+U 5F1F170D
+F0 "Onboard-MCU" 60
+F1 "atmega328p.sch" 60
+$EndSheet
+Text GLabel 8350 5150 0    60   Input ~ 0
+~MCU_RESET
+Text GLabel 6500 5050 2    60   Input ~ 0
+~MCU_RESET
+Wire Wire Line
+	8350 5150 8500 5150
+Text GLabel 2300 4600 2    60   Input ~ 0
+MCU_SCK
+Text GLabel 6500 6850 2    60   Input ~ 0
+MCU_SCK
+Text GLabel 3050 4700 3    60   Input ~ 0
+MCU_SCK
+Text GLabel 1150 7000 3    60   Input ~ 0
+MCU_SLOT_ID
+Text GLabel 3600 5350 0    60   Input ~ 0
+MCU_SLOT_ID
+Wire Wire Line
+	1150 7000 1150 6900
+Wire Wire Line
+	3600 5350 3700 5350
+Text GLabel 3100 6950 3    60   Input ~ 0
+~MCU_SS
+Text GLabel 3300 6950 3    60   Input ~ 0
+MCU_MOSI
+Text GLabel 3500 6950 3    60   Input ~ 0
+MCU_MISO
+Wire Wire Line
+	3100 6950 3100 6550
+Connection ~ 3100 6550
+Wire Wire Line
+	3300 6950 3300 6700
+Connection ~ 3300 6700
+Wire Wire Line
+	3500 6950 3500 6850
+Connection ~ 3500 6850
+NoConn ~ 3700 4750
+NoConn ~ 3700 4900
 $EndSCHEMATC

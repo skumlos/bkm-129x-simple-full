@@ -1,12 +1,13 @@
 A full sized version of the BKM-129X compatible board
 
-Revision A
+Revision B
 
 Should be able to be created at ~$40, with the ADG1611 being the most expensive component.
 
-This requires an Arduino Nano v3 loaded with the latest BKM-129X-MCU code from https://github.com/skumlos/bkm-129x-mcu
+This requires an Arduino Nano v3 *or* the ATMEGA328PB mounted, which is then loaded with the
+latest BKM-129X-MCU code from https://github.com/skumlos/bkm-129x-mcu (onboard MCU is still untested)
 
-This has 4 switches to be able to turn internal 75 Ohm termination on out pass signal through to the output BNCs. You 
+The has 4 switches to be able to turn internal 75 Ohm termination on out pass signal through to the output BNCs. You 
 can choose to set all switches down, and then terminate with external termination resistors. If you wish to omit the
 switches altogther, bridge the two pins bottom left of each switch (when viewed component side, BNCs to left). 
 A 0 Ohm 0805 should be able to reach here I guess.
@@ -48,6 +49,8 @@ Check the MCU code for verified compatibility.
 ---------
 
 Board revision history:
+
+B: Added onboard MCU option
 
 A: Initial version
 
