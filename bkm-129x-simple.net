@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/martin/SkumServer/eda-projects/bkm-129x-simple-full/bkm-129x-simple.sch)
-    (date "2020-07-28T21:27:39 CEST")
+    (date "2020-09-02T21:56:11 CEST")
     (tool "Eeschema 4.0.7-e2-6376~61~ubuntu18.04.1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -1140,7 +1140,7 @@
       (node (ref U6) (pin 6)))
     (net (code 113) (name "Net-(U6-Pad7)")
       (node (ref U6) (pin 7))
-      (node (ref Y1) (pin 3)))
+      (node (ref Y1) (pin 1)))
     (net (code 114) (name "Net-(U6-Pad8)")
       (node (ref U6) (pin 8))
-      (node (ref Y1) (pin 1)))))
+      (node (ref Y1) (pin 3)))))
