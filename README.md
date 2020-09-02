@@ -42,6 +42,20 @@ Cool kids give credit where due.
 
 ---------
 
+Programming the onboard ATMEGA328PB is a little different than when using a pre-made Arduino board.
+The reason for this is that the fuses of the ATMEGA aren't set when the MCU leaves the factory.
+Thus to program it, you will need ATMEGA328PB support in the Arduino IDE. The easiest way is to
+install the MiniCore board support package (through the Boards Manager), for installation
+check the "How to install" at https://github.com/MCUdude/MiniCore.
+When MiniCore is available,  select the ATMEGA328 under MiniCore in the board menu, then select
+"External 16 MHz" in Clock, disable BOD, select ATMEGA328PB in Variant, select No bootloader.
+Then press "Burn bootloader" (assuming your programmer and so on is already setup). This will
+program the fuses. Last, upload the sketch by pressing "Upload using programmer". If you don't
+do this, nothing will work, because the MCU won't know how to use the external clock and so on.
+
+
+---------
+
 Should be compatible with basically all monitors that accept the original BKM-129X
 
 Check the MCU code for verified compatibility.
