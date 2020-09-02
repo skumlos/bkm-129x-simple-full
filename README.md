@@ -5,7 +5,7 @@ Revision B
 Should be able to be created at ~$40, with the ADG1611 being the most expensive component.
 
 This requires an Arduino Nano v3 *or* the ATMEGA328PB mounted, which is then loaded with the
-latest BKM-129X-MCU code from https://github.com/skumlos/bkm-129x-mcu (onboard MCU is still untested)
+latest BKM-129X-MCU code from https://github.com/skumlos/bkm-129x-mcu
 
 The has 4 switches to be able to turn internal 75 Ohm termination on out pass signal through to the output BNCs. You 
 can choose to set all switches down, and then terminate with external termination resistors. If you wish to omit the
