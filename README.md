@@ -64,6 +64,8 @@ Check the MCU code for verified compatibility.
 
 Board revision history:
 
+C: Fixed THS7374 filter bypass.
+
 B: Added onboard MCU option
 
 A: Initial version

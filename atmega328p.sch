@@ -1,44 +1,5 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:ths7374
-LIBS:arduino-nano-v3
-LIBS:adg734
-LIBS:adg1611
-LIBS:dtc144eka
-LIBS:mic3490
-LIBS:bkm-129x-simple-cache
-EELAYER 25 0
+EESchema Schematic File Version 4
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -53,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ATMEGA328PB-AU U6
+L bkm-129x-simple-rescue:ATMEGA328PB-AU U6
 U 1 1 5F1F180C
 P 5150 3500
 F 0 "U6" H 4750 4975 50  0000 R BNN
@@ -64,7 +25,7 @@ F 3 "" H 4850 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Crystal_GND2 Y1
+L bkm-129x-simple-rescue:Crystal_GND2 Y1
 U 1 1 5F1F1898
 P 7300 2950
 F 0 "Y1" H 7300 3175 50  0000 C CNN
@@ -91,7 +52,7 @@ Wire Wire Line
 Wire Wire Line
 	7300 3200 7300 3100
 $Comp
-L GNDD #PWR062
+L power:GNDD #PWR062
 U 1 1 5F1F1A3C
 P 7500 2950
 F 0 "#PWR062" H 7500 2700 50  0001 C CNN
@@ -106,7 +67,7 @@ Text GLabel 6550 3800 2    60   Input ~ 0
 Wire Wire Line
 	6450 3800 6550 3800
 $Comp
-L GNDD #PWR063
+L power:GNDD #PWR063
 U 1 1 5F1F5487
 P 5000 5100
 F 0 "#PWR063" H 5000 4850 50  0001 C CNN
@@ -182,7 +143,7 @@ NoConn ~ 3850 4100
 NoConn ~ 3850 4300
 NoConn ~ 3850 4400
 $Comp
-L C C16
+L bkm-129x-simple-rescue:C C16
 U 1 1 5F1F6C18
 P 4650 1650
 F 0 "C16" H 4675 1750 50  0000 L CNN
@@ -193,7 +154,7 @@ F 3 "" H 4650 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C15
+L bkm-129x-simple-rescue:C C15
 U 1 1 5F1F6C65
 P 4400 1650
 F 0 "C15" H 4425 1750 50  0000 L CNN
@@ -204,7 +165,7 @@ F 3 "" H 4400 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5VD #PWR064
+L power:+5VD #PWR064
 U 1 1 5F1F6CE5
 P 4400 1400
 F 0 "#PWR064" H 4400 1250 50  0001 C CNN
@@ -224,7 +185,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 1450 5050 2000
 $Comp
-L C C17
+L bkm-129x-simple-rescue:C C17
 U 1 1 5F1F6E50
 P 3600 2600
 F 0 "C17" H 3625 2700 50  0000 L CNN
@@ -235,7 +196,7 @@ F 3 "" H 3600 2600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L GNDD #PWR065
+L power:GNDD #PWR065
 U 1 1 5F1F6EA7
 P 3350 2600
 F 0 "#PWR065" H 3350 2350 50  0001 C CNN
@@ -259,7 +220,7 @@ Wire Wire Line
 	4400 1850 4400 1800
 Connection ~ 4400 1850
 $Comp
-L GNDD #PWR066
+L power:GNDD #PWR066
 U 1 1 5F1F802F
 P 4400 1850
 F 0 "#PWR066" H 4400 1600 50  0001 C CNN
@@ -271,7 +232,7 @@ F 3 "" H 4400 1850 50  0001 C CNN
 $EndComp
 NoConn ~ 3850 4200
 $Comp
-L Conn_02x03_Odd_Even J6
+L bkm-129x-simple-rescue:Conn_02x03_Odd_Even J6
 U 1 1 5F1FE23D
 P 8600 3400
 F 0 "J6" H 8650 3600 50  0000 C CNN
@@ -282,7 +243,7 @@ F 3 "" H 8600 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR067
+L power:GNDD #PWR067
 U 1 1 5F1FE2BE
 P 8950 3550
 F 0 "#PWR067" H 8950 3300 50  0001 C CNN
@@ -293,7 +254,7 @@ F 3 "" H 8950 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5VD #PWR068
+L power:+5VD #PWR068
 U 1 1 5F1FE30F
 P 8950 3250
 F 0 "#PWR068" H 8950 3100 50  0001 C CNN
