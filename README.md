@@ -1,8 +1,9 @@
 A full sized version of the BKM-129X compatible board
 
-Revision B
+Revision D
 
-Should be able to be created at ~$40, with the ADG1611 being the most expensive component.
+Should be able to be created at ~$40, with the ADG1611BRUZ being the most expensive component.
+Note that DG1411EEQ is pin-compatible with a slighly higher Ron.
 
 This requires an Arduino Nano v3 *or* the ATMEGA328PB mounted, which is then loaded with the
 latest BKM-129X-MCU code from https://github.com/skumlos/bkm-129x-mcu
@@ -64,6 +65,9 @@ Check the MCU code for verified compatibility.
 
 Board revision history:
 
+D: Change hole size in backplane connector to accomodate larger pin sizes,
+   support 1117 LDOs, change to Kicad 5 footprints, general cleanup
+
 C: Fixed THS7374 filter bypass.
 
 B: Added onboard MCU option
@@ -72,7 +76,7 @@ A: Initial version
 
 ---------
 
-Copyright © 2020 Martin Hejnfelt <martin@hejnfelt.com>
+Copyright © 2022 Martin Hejnfelt <martin@hejnfelt.com>
 This work is free. You can redistribute it and/or modify it under the
 terms of the Do What The Fuck You Want To Public License, Version 2,
 as published by Sam Hocevar. See the LICENSE file for more details.
